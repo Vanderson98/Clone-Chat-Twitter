@@ -1,0 +1,250 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(192,192,192, .5);
+    text-align: center;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#imagem-perfil{
+    width: 5%;
+    margin: 5px 15px;
+}
+
+#imagem-perfil img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#nomes{
+    display: flex;
+    flex-direction: column;
+}
+
+#nomes h1{
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#nomes h2, #nomes a{
+    font-size: 18px;
+    margin-top: -10px;
+    color: #C0C0C0;
+    transition: 1s;
+}
+
+#chat-esquerdo{
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    margin: 5px;
+}
+
+#imagem-perfil-chat{
+    width: 7%;
+    margin: 5px;
+    object-fit: cover;
+}
+
+#imagem-perfil-chat2{
+    display: none;
+}
+
+#imagem-perfil-chat img{
+    border-radius: 50%;
+}
+
+#conversa-chat{
+    background-color: #DCDCDC;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px 15px 15px 3px;
+    text-align: justify;
+    font-size: 18px;  
+}
+
+
+#direito{
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    align-items: flex-end;
+}
+
+#direito2{
+    width: 50%;
+    background-color: #fff;
+}
+
+#chat-direito{
+    display: flex;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    margin: 5px;
+}
+
+#conversa-chat-direito{
+    border: 1px solid;
+    background-color: #1E90FF;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px 15px 3px 15px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#espaco{
+    margin-bottom: 100px;
+}
+
+footer{
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    background-color: 	rgba(220,220,220, .5);
+}
+
+input{
+    border: 2px solid rgba(211,211,211, .5);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 0 0;
+    outline: 0;    
+}
+
+input:focus{
+    border: 2px solid rgba(211,211,211, .5);
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#mensagem{
+    width: 50%;
+}
+
+#icones a{
+    margin: 20px;
+    background-color: rgba(192,192,192, .5);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #1E90FF;
+    border: 2px solid #1E90FF;
+}
+
+#botao{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media(max-width: 1200px){
+    #imagem-perfil{
+        width: 10%;
+    }
+
+    #imagem-perfil-chat{
+        width: 10%;
+    }
+}
+
+@media(max-width: 992px){
+    #chat-direito{
+        width: 75%;
+    }
+
+    #chat-esquerdo{
+        width: 60%;
+    }
+
+    #imagem-perfil{
+        width: 12%;
+    }
+
+    #imagem-perfil-chat{
+        width: 12%;
+    }
+}
+
+@media(max-width: 768px){
+    #imagem-perfil-chat{
+        width: 15%;
+        margin: 10px;
+    }
+
+    #imagem-perfil{
+        width: 15%;
+    }
+}
+
+@media(max-width: 576px){
+    #imagem-perfil-chat{
+        display: none;
+    }
+
+    #imagem-perfil-chat2{
+        width: 25%;
+        margin: 5px;
+        object-fit: cover;
+    }
+    
+    #imagem-perfil-chat2 img{
+        border-radius: 50%;
+    }
+
+    #imagem-perfil{
+        width: 25%;
+    }
+
+    #chat-direito{
+        width: 100%;
+        margin: auto;
+    }
+
+    #chat-esquerdo{
+        width: 75%;
+    }
+
+    #chat-direito, #chat-esquerdo{
+        padding: 0;
+    }
+
+    #direito2{
+        width: 35%;
+    }
+
+    #icones{
+        width: 80%;
+    }
+
+    #icones a{
+        padding: 5px;
+        margin: 10px;
+    }
+}
